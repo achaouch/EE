@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="106307" started-at="2020-04-02T19:20:42 CEST" finished-at="2020-04-02T19:22:28 CEST">
+  <suite name="Default suite" duration-ms="105783" started-at="2020-04-02T21:00:47 CEST" finished-at="2020-04-02T21:02:33 CEST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="106307" started-at="2020-04-02T19:20:42 CEST" finished-at="2020-04-02T19:22:28 CEST">
+    <test name="Default test" duration-ms="105783" started-at="2020-04-02T21:00:47 CEST" finished-at="2020-04-02T21:02:33 CEST">
       <class name="fr.mutex.qualif.espaceemployeur.EESoDig135">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:fr.mutex.qualif.espaceemployeur.EESoDig135@1cf2fed4]" name="setUp" is-config="true" duration-ms="94731" started-at="2020-04-02T19:20:42 CEST" finished-at="2020-04-02T19:22:17 CEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:fr.mutex.qualif.espaceemployeur.EESoDig135@3af4e0bf]" name="setUp" is-config="true" duration-ms="94379" started-at="2020-04-02T21:00:47 CEST" finished-at="2020-04-02T21:02:22 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="SoDig135()[pri:0, instance:fr.mutex.qualif.espaceemployeur.EESoDig135@1cf2fed4]" name="SoDig135" duration-ms="9966" started-at="2020-04-02T19:22:17 CEST" finished-at="2020-04-02T19:22:27 CEST">
+        <test-method status="PASS" signature="SoDig135()[pri:0, instance:fr.mutex.qualif.espaceemployeur.EESoDig135@3af4e0bf]" name="SoDig135" duration-ms="9877" started-at="2020-04-02T21:02:22 CEST" finished-at="2020-04-02T21:02:32 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SoDig135 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:fr.mutex.qualif.espaceemployeur.EESoDig135@1cf2fed4]" name="tearDown" is-config="true" duration-ms="1140" started-at="2020-04-02T19:22:27 CEST" finished-at="2020-04-02T19:22:28 CEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:fr.mutex.qualif.espaceemployeur.EESoDig135@3af4e0bf]" name="tearDown" is-config="true" duration-ms="1181" started-at="2020-04-02T21:02:32 CEST" finished-at="2020-04-02T21:02:33 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

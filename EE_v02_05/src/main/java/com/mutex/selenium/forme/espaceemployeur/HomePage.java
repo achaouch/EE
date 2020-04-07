@@ -13,7 +13,7 @@ import com.mutex.selenium.util.TestUtil;
 
 import io.qameta.allure.Step;
 
-public class EspaceEmployeurPage extends BasePage {
+public class HomePage extends BasePage {
 
 	@FindBy(xpath = "//a[@href='/Suivre-vos-salaries']")
 	WebElement SuivreVosSalariers;
@@ -27,9 +27,15 @@ public class EspaceEmployeurPage extends BasePage {
 	@FindBy(xpath = "//a[@href='/Consulter-vos-informations/Documents-contractuels']")
 	WebElement DocumentsContractuels;
 	
+	@FindBy(xpath = "//a[@href='/Utiliser-vos-services']")
+	WebElement UtiliserVosServices;
+	
+	@FindBy(xpath = "//a[@href='/Utiliser-vos-services/Decouvrir-vos-services']")
+	WebElement DecouvrirVosServices;
+	
 	private WebDriver driver;
 
-	public EspaceEmployeurPage(WebDriver driver) {
+	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -57,4 +63,11 @@ public class EspaceEmployeurPage extends BasePage {
 		wait.until(ExpectedConditions.visibilityOf(DocumentsContractuels));
 	}
 
+	@Step("On Ouvre le Menu 'Utiliser-vos-Services'.")
+	public void clickUtiliserVosServices() {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOf(UtiliserVosServices));
+		UtiliserVosServices.click();
+		wait.until(ExpectedConditions.visibilityOf(DecouvrirVosServices));
+	}
 }

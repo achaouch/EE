@@ -1,4 +1,4 @@
-package com.mutex.selenium.forme.espaceemployeur;
+package com.mutex.selenium.forme.espaceemployeur.homePageMenu;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

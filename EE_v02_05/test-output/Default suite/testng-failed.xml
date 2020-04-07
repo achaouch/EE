@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="fr.mutex.qualif.espaceemployeur.EESoDig135">
+      <class name="fr.mutex.qualif.espaceemployeur.EESoDig177">
         <methods>
-          <include name="SoDig135"/>
-          <include name="setUp"/>
+          <include name="SoDig177"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- fr.mutex.qualif.espaceemployeur.EESoDig135 -->
+      </class> <!-- fr.mutex.qualif.espaceemployeur.EESoDig177 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

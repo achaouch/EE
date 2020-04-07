@@ -7,10 +7,10 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.mutex.selenium.Base.BasePage;
-import com.mutex.selenium.forme.espaceemployeur.ConsulterVosInformationsPage;
-import com.mutex.selenium.forme.espaceemployeur.EspaceEmployeurPage;
+import com.mutex.selenium.forme.espaceemployeur.HomePage;
 import com.mutex.selenium.forme.espaceemployeur.LoginPage;
 import com.mutex.selenium.forme.espaceemployeur.consulterVosInformations.DocumentsContractuelsPage;
+import com.mutex.selenium.forme.espaceemployeur.homePageMenu.ConsulterVosInformationsPage;
 import com.mutex.selenium.listeners.TestAllureListener;
 import com.mutex.selenium.testdata.InfoCompte;
 import com.mutex.selenium.testdata.LoginInput;
@@ -25,7 +25,7 @@ public class EESoDig135 {
 	public BasePage basePage;
 	public WebDriver driver;
 	public LoginPage loginPage;
-	public EspaceEmployeurPage espaceEmployeurPage;
+	public HomePage homePage;
 	public ConsulterVosInformationsPage consulterVosInformationsPage;
 	public DocumentsContractuelsPage documentsContractuelsPage;
 	
@@ -46,9 +46,9 @@ public class EESoDig135 {
 		
 		loginPage.login(loginInput.getMail(), loginInput.getPw());
 		
-		espaceEmployeurPage = new EspaceEmployeurPage(driver);
-		Assert.assertEquals(espaceEmployeurPage.getEspaceEmployeuPageTitle(), "Espace employeur");
-		espaceEmployeurPage.clickConsulterVosInformations();
+		homePage = new HomePage(driver);
+		Assert.assertEquals(homePage.getEspaceEmployeuPageTitle(), "Espace employeur");
+		homePage.clickConsulterVosInformations();
 		
 		consulterVosInformationsPage = new ConsulterVosInformationsPage(driver);
 		consulterVosInformationsPage.clickDocumentsContractuels();

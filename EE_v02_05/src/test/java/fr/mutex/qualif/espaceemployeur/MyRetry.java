@@ -11,7 +11,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.mutex.selenium.Base.BasePage;
-import com.mutex.selenium.forme.espaceemployeur.EspaceEmployeurPage;
+import com.mutex.selenium.forme.espaceemployeur.HomePage;
 import com.mutex.selenium.forme.espaceemployeur.LoginPage;
 import com.mutex.selenium.forme.espaceemployeur.suivreVosSalaries.ListeDuPersonnelCouvert;
 import com.mutex.selenium.listeners.TestAllureListener;
@@ -31,7 +31,7 @@ import org.testng.ITestResult;
 public class MyRetry implements IRetryAnalyzer {
  
   private int retryCount = 0;
-  private static final int maxRetryCount = 0;
+  private static final int maxRetryCount = 2;
  
   @Override
   public boolean retry(ITestResult result) {

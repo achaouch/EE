@@ -4,6 +4,8 @@
   <test thread-count="2" name="Test">
     <classes>
       <class name="fr.mutex.qualif.espaceemployeur.EESoDig177"/>
+      <class name="fr.mutex.qualif.espaceemployeur.EESoDig135"/>
+      <class name="fr.mutex.qualif.espaceemployeur.EESoDig55"/>
       <class name="fr.mutex.qualif.espaceemployeur.test2"/>
     </classes>
   </test> <!-- Test -->

@@ -6,9 +6,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.mutex.selenium.Base.BasePage;
-import com.mutex.selenium.forme.espaceemployeur.EspaceEmployeurPage;
+import com.mutex.selenium.forme.espaceemployeur.HomePage;
 import com.mutex.selenium.forme.espaceemployeur.LoginPage;
-import com.mutex.selenium.forme.espaceemployeur.SuivreVosSalariesPage;
+import com.mutex.selenium.forme.espaceemployeur.homePageMenu.SuivreVosSalariesPage;
 import com.mutex.selenium.forme.espaceemployeur.suivreVosSalaries.ListeDuPersonnelCouvert;
 import com.mutex.selenium.listeners.TestAllureListener;
 import com.mutex.selenium.testdata.LoginInput;
@@ -22,7 +22,7 @@ public class EESoDig177 {
 	public BasePage basePage;
 	public WebDriver driver;
 	public LoginPage loginPage;
-	public EspaceEmployeurPage espaceEmployeurPage;
+	public HomePage homePage;
 	public SuivreVosSalariesPage suivreVosSalariesPage;
 	public ListeDuPersonnelCouvert listeDuPersonnelCouvert;
 	
@@ -42,9 +42,9 @@ public class EESoDig177 {
 		
 		loginPage.login(loginInput.getMail(), loginInput.getPw());
 		
-		espaceEmployeurPage = new EspaceEmployeurPage(driver);
-		Assert.assertEquals(espaceEmployeurPage.getEspaceEmployeuPageTitle(), "Espace employeur");
-		espaceEmployeurPage.clickSuivreVosSalaries();
+		homePage = new HomePage(driver);
+		Assert.assertEquals(homePage.getEspaceEmployeuPageTitle(), "Espace employeur");
+		homePage.clickSuivreVosSalaries();
 		
 		suivreVosSalariesPage = new SuivreVosSalariesPage(driver);
 		suivreVosSalariesPage.clickListeDuPersonnelCouvert();

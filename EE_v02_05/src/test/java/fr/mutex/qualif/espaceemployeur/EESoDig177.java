@@ -58,7 +58,6 @@ public class EESoDig177 {
 		//String[] valueslistNonDsn = {"JUMEAU STEPHANIE","MAANANEc MERYEM"};
 		Assert.assertTrue(listeDuPersonnelCouvert.RechercheListeDansLetableau("tableListSalaries","1",svsInput.getvalueList()));
 	}
-
 	@AfterMethod // --this method will be executed after every test method
 	public void tearDown() {
 		driver.quit();

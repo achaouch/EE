@@ -20,7 +20,7 @@ import io.qameta.allure.Step;
 public class DecouvrirVosServices extends BasePage {
 
 
-	@FindBy(xpath = "//a[@href='/Utiliser-vos-services/Decouvrir-vos-servicesXXX']")
+	@FindBy(xpath = "//a[@href='/Utiliser-vos-services/Decouvrir-vos-services']")
 	WebElement DecouvrirVosServicesAffichage;
 	
 	private WebDriver driver;

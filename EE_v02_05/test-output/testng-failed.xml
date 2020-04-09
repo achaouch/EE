@@ -5,8 +5,8 @@
     <classes>
       <class name="fr.mutex.qualif.espaceemployeur.EESoDig55">
         <methods>
+          <include name="SoDig55"/>
           <include name="tearDown"/>
-          <include name="SoDig177"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- fr.mutex.qualif.espaceemployeur.EESoDig55 -->

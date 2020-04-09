@@ -24,7 +24,6 @@ public class ListeDuPersonnelCouvert extends BasePage {
 	@FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='Liste du personnel couvert'])[3]/following::summary[1]")
 	WebElement RechercheVosSalaries;
 	
-	
 	@FindBy(id = "salarie_search_form_rechercher")
 	WebElement lancerRecherche;
 	
@@ -38,10 +37,6 @@ public class ListeDuPersonnelCouvert extends BasePage {
 		PageFactory.initElements(driver, this);
 	}
 
-
-
-	
-	
 	@Step("On Ouvre le Menu 'Recherche-vos-salarie'.")
 	public void clickRechercheVosSalaries() {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
